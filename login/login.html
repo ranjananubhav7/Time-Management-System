@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form onsubmit="login()">
+        <input type="text" id="userName">
+        <input type="password" id="password">
+        <button type="submit"">login</button>
+    </form>
+</body>
+<script>
+    function login(){
+        var userName = document.getElementById("userName").value;
+        var password = document.getElementById("password").value;
+        if(userName=='admin101' && password=='12345')    window.open("http://localhost:3000/");
+        else alert("Wrong Credentials")
+    }
+</script>
+</html>
